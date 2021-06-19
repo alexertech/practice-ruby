@@ -23,4 +23,8 @@ def printArrow(direction, columns)
 
 end
 
-printArrow("#{ARGV[0]}", ARGV[1].to_i)
+if "#{ARGV[0]}".empty? or "#{ARGV[1]}".empty? then
+    puts "Usage: ruby arrow.rb [LEFT-RIGHT] [NUM]"
+else
+    printArrow("#{ARGV[0]}", ARGV[1].to_i)
+end
