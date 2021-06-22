@@ -1,3 +1,5 @@
+# Casidoo Challenge 14/06/21
+
 # Given a direction and a number of columns, write a function that 
 # outputs an arrow of asterisks
 def printArrow(direction, columns)
