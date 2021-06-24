@@ -1,7 +1,7 @@
 class Cat 
-    def initialize
-      @fur         = 1000 # Max 5000
-      @jump_height = 10   # Meters
+    def initialize(fur, jump)
+      @fur         = fur  # Max 5000
+      @jump_height = jump # Meters
     end
     def meow
         puts "meow meow"
@@ -15,8 +15,11 @@ class Cat
     end
 end
 
-kitten = Cat.new
+kitten = Cat.new(750,2)
+feral  = Cat.new(2000,10)
+
 kitten.meow
+puts feral.inspect
 
 # Create a method
 def kitten.scratch
